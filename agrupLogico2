@@ -28,7 +28,7 @@ for i in range(4):
     quantidade= int(input(f"Digite a quantidade desse produto vendido no {i+1} mes: "))
     quantidades.append(quantidade)
         
-media=sum(quantidades)/len(quantidades)
+media=sum(quantidades)/len(quantidades)  #
 estoque=int(input("Digite a quantidade atual em estoque: "))  #INT: transforma o valor digitado em numero inteiro
 
 print("\n--- CONTROLE DE ESTOQUE ---")
@@ -39,9 +39,12 @@ elif media>estoque and estoque>0:
 else:
     resultado=("Situação: Produto esgotado.")
     
+    
+print=("\n --- RELATORIO DE ESTOQUE ---")    
 print(f"Produto: {nome}")
 print(f"Média de vendas: {media}")
 print(f"Estoque atual {estoque}")
 print(resultado)
 
+        
         
